@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Listas de Clientes</h1>
+        <table class="table table-hover">
+            <thead class="table-warning">
+                <tr>
+                    <th>IdPersona</th>
+                    <th>Nombre</th>
+                    <th>Apaterno</th>
+                    <th>Amaterno</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>Ramirez</td>
+                    <td>Rivera</td> 
+                    <td>Masculino</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jose</td>
+                    <td>Correa</td>
+                    <td>Rios</td> 
+                    <td>Masculino</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Yahir</td>
+                    <td>Alvarado</td>
+                    <td>Garza</td> 
+                    <td>Masculino</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yoshep</td>
+                    <td>Garza</td>
+                    <td>Padilla</td> 
+                    <td>Masculino</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#myModal" >Nuevo Cliente</button>
+        <button type="button" class="btn-outline-warning btn-lg">Editar Cliente</button>
+        <button type="button" class="btn-outline-danger btn-lg">Eliminar Cliente</button>
+
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registrar Cliente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form action="">
+                    <label for="" class="form-label">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" placeholder="Escribe tu nombre">
+                    <label for="" class="form-label">Apaterno</label>
+                    <input class="form-control" type="text" name="apaterno" placeholder="Escribe tu apellido">
+                    <label for="" class="form-label">Amaterno</label>
+                    <input class="form-control" type="text" name="apaterno" placeholder="Escribe tu apellido">
+                    <label class="form-label" for="sex">Sexo</label>
+                    <select name="sex" class="form-select">
+                        <option value="m">Masculino</option>
+                        <option value="f">Femenino</option>
+                    </select>
+                    <label class="form-label" for="edad">Edad</label>
+                    <input class="form-control" type="text" name="edad" placeholder="Escribe tu edad">
+                </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
